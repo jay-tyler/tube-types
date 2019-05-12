@@ -16,12 +16,13 @@ which kind of phone number it could be, at run time. This is a style of typing
 commonly seen in Lisp-derived languages where every type comes with an instantiator,
 e.g. `pair` and a type tester, e.g. `pair?`.
 
-Also every time I need to create a regex, it's as though I'm doing it for the very
-first time. Wouldn't it make more sense to create a value-testing function that
-could be reused in multiple code bases?
+And also, when it comes to regexes, it's as though I'm doing it for the very
+first time every time. It's one of those things that never ends up being DRY.
+Instead of creating another new regex, wouldn't it make more sense to create
+a value-testing function that could be reused in multiple code bases?
 
 ## Contrast against other libraries
-This library is meant to strongly emphasize extract type refactors and functional
+This library is meant to strongly emphasize "extract" type refactors and functional
 composition.
 
 There are a few different ways to "misuse" this paradigm (IMO):
